@@ -11,7 +11,7 @@ export function Apropos() {
         {aproposData.map((e) => {
           return(
             <>
-              <AccordionApropos {...e} />
+              <AccordionApropos {...e} key={e.id}/>
             </>
           )
         })}
