@@ -1,7 +1,5 @@
 import { useState } from "react"
 
-
-/* accordion A PROPOS */
 export function Accordion({title, content}) {
   const [active, setActive] = useState(false)
   const display = () => {
