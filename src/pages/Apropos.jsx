@@ -1,5 +1,5 @@
 import aproposData  from '../assets/data/apropos.json'
-import { AccordionApropos } from '../components/Accordion';
+import { Accordion } from '../components/Accordion';
 
 
 export function Apropos() {
@@ -11,7 +11,7 @@ export function Apropos() {
         {aproposData.map((e) => {
           return(
             <>
-              <AccordionApropos {...e} key={e.id}/>
+              <Accordion title={e.title} content={e.content} key={e.id}/>
             </>
           )
         })}

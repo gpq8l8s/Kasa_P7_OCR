@@ -6,7 +6,7 @@ export function Header() {
   let activeStyle = {
     textDecoration: "underline",
   }
-  // let activeClassName = "underline";
+  
     return(
       <>
       <header>

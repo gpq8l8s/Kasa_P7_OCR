@@ -331,7 +331,6 @@ header nav ul #menu-a-propos {
 }
 .logements-section .logements-accordion .accordion-item .accordion-content {
   margin-bottom: 0px;
-  padding: 23px 7px 10px 12px;
   background-color: var(--color-bg-gray);
   border-radius: 5px;
 }
@@ -340,8 +339,14 @@ header nav ul #menu-a-propos {
   font-size: var(--font-size-menu);
   font-weight: var(--font-weight-light);
   line-height: 17px;
+  padding: 23px 7px 10px 12px;
 }
 
+.logements-section .logements-accordion .accordion-item .accordion-content p ul li{
+  font-size: var(--font-size-menu);
+  font-weight: var(--font-weight-light);
+  line-height: 17px;
+}
 
 /*===== SLIDE - logements =====*/
 .slider-wrapper {
@@ -685,7 +690,7 @@ footer .footer-txt {
   .index-pictures-log {
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
     margin-bottom: 25px;
     font-size: var(--font-size-medium);
     width: 100%;
