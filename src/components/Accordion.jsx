@@ -1,13 +1,13 @@
 import { useState } from "react"
 
-export function Accordion({id,title, content}) {
+export function Accordion({title, content}) {
   const [active, setActive] = useState(false)
   const display = () => {
     setActive(!active)
   }
     return(
       <>
-      <div className="accordion-item" key={id}>
+      <div className="accordion-item" key={title}>
         <div className="accordion-title" style={{cursor : "pointer"}} onClick={display}>
           <h1>{title}</h1>
           <div className="div-arrow">
@@ -19,9 +19,9 @@ export function Accordion({id,title, content}) {
           </div>
         </div>
         {active ? 
-        <div className="accordion-content" key={id}>
+        <div className="accordion-content">
           {content}
-        </div> : <div key={id} style={{display : "none"}}></div>
+        </div> : <div style={{display : "none"}}></div>
         }
       </div>
       </>

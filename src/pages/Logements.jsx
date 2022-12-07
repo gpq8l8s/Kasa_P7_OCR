@@ -61,26 +61,25 @@ export function Logements() {
             </div>
           </div>
         </article>
-        <article className="logements-accordion">
-                <Accordion title="Description" content=
-                {
-                      <p>
-                        {logement.description}
-                      </p>
-                }
-                  />
-                <Accordion
-                    title="Équipment"
-                    content={logement.equipments.map((e) => {
-                      return(
-                        <>
-                        <p className='remove-padding-p' key={e}>
-                        {e}
+        <article className="logements-accordion" >
+                  <Accordion
+                  title="Description" content=
+                  {
+                        <p>
+                          {logement.description}
                         </p>
-                        </>
-                        )
-                      })}
+                  }
                     />
+                  <Accordion
+                      title="Équipment"
+                      content={logement.equipments.map((e) => {
+                        return(
+                          <p className='remove-padding-p' key={e}>
+                          {e}
+                          </p>
+                          )
+                        })}
+                      />
         </article>
       </section>
     )

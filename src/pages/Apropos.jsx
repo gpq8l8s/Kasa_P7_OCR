@@ -10,13 +10,13 @@ export function Apropos() {
       <article className='accordion-wrapper'>
         {aproposData.map((e) => {
           return(
-            <>
-              <Accordion title={e.title} content={
+              <Accordion
+                key={e.content}
+                title={e.title} content={
                 <p>
                   {e.content}
                 </p>
-                } key={e.id}/>
-            </>
+                }/>
           )
         })}
       </article>
