@@ -8,10 +8,10 @@ export default function Thumb() {
   {data && data.map((element) => {
     return(
       <Link to = {`/logements/${element.id}`} key={element.id}>
-      <article  className={element.id}>
-      <h1 className='title-location'>{element.title}</h1>
-      <img src={element.cover} alt="" />
-      </article>
+        <article  className={element.id}>
+        <h1 className='title-location'>{element.title}</h1>
+        <img src={element.cover} alt="" />
+        </article>
       </Link>
       )
     })}

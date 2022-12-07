@@ -342,6 +342,17 @@ header nav ul #menu-a-propos {
   padding: 23px 7px 10px 12px;
 }
 
+.logements-section .logements-accordion .accordion-item .accordion-content .remove-padding-p {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.logements-section .logements-accordion .accordion-item .accordion-content .remove-padding-p:first-of-type {
+  padding-top: 23px;
+}
+.logements-section .logements-accordion .accordion-item .accordion-content .remove-padding-p:last-of-type {
+  padding-bottom: 10px;
+}
+
 .logements-section .logements-accordion .accordion-item .accordion-content p ul li{
   font-size: var(--font-size-menu);
   font-weight: var(--font-weight-light);
@@ -646,8 +657,6 @@ footer .footer-txt {
   }
 
   .logements-section .logements-accordion .accordion-item .accordion-content {
-    padding: 40px 12px 30px 20px;
-    border-radius: 10px;
   }
 
   .logements-section .logements-accordion .accordion-item .accordion-content p {
@@ -655,6 +664,17 @@ footer .footer-txt {
     line-height: 26px;
   }
 
+  /* .logements-section .logements-accordion .accordion-item .accordion-content .remove-padding-p {
+    padding-top: 0;
+    padding-bottom: 0;
+  } */
+
+  .logements-section .logements-accordion .accordion-item .accordion-content .remove-padding-p:first-of-type {
+    padding-top: 23px;
+  }
+  .logements-section .logements-accordion .accordion-item .accordion-content .remove-padding-p:last-of-type {
+    padding-bottom: 10px;
+  }
   .logements-section .wrapper {
     margin:  24px 100px;
   }

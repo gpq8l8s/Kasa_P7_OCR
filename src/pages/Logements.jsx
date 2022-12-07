@@ -1,4 +1,3 @@
-// import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { useParams, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import data from '../assets/data/logements.json'
@@ -63,19 +62,25 @@ export function Logements() {
           </div>
         </article>
         <article className="logements-accordion">
-                <Accordion title="Description" content={logement.description} key="description"/>
+                <Accordion title="Description" content=
+                {
+                      <p>
+                        {logement.description}
+                      </p>
+                }
+                  />
                 <Accordion
                     title="Équipment"
-                    content={logement.equipments && logement.equipments.map((e) => {
+                    content={logement.equipments.map((e) => {
                       return(
                         <>
-                        <ul>
-                        <li>{e}</li>
-                        </ul>
+                        <p className='remove-padding-p' key={e}>
+                        {e}
+                        </p>
                         </>
-                      )
-                    })}
-                    key="equipement"/>
+                        )
+                      })}
+                    />
         </article>
       </section>
     )

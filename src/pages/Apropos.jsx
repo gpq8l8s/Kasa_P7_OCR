@@ -11,7 +11,11 @@ export function Apropos() {
         {aproposData.map((e) => {
           return(
             <>
-              <Accordion title={e.title} content={e.content} key={e.id}/>
+              <Accordion title={e.title} content={
+                <p>
+                  {e.content}
+                </p>
+                } key={e.id}/>
             </>
           )
         })}
